@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 837 539" style="enable-background:new 0 0 837 539;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4296FA;}
+	.st1{fill:url(#SVGID_1_);fill-opacity:0.6;}
+	.st2{fill:url(#SVGID_2_);fill-opacity:0.95;}
+	.st3{fill:url(#SVGID_3_);}
+	.st4{fill:url(#SVGID_4_);fill-opacity:0.65;}
+</style>
+<rect x="135" y="141" class="st0" width="511" height="329"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-246.5" y1="610" x2="-246.5" y2="281" gradientTransform="matrix(-1 0 0 1 144 -140)">
+	<stop  offset="0" style="stop-color:#E632D4"/>
+	<stop  offset="1" style="stop-color:#1C30E6;stop-opacity:0.2"/>
+</linearGradient>
+<rect x="135" y="141" class="st1" width="511" height="329"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="176" y1="382" x2="176" y2="164" gradientTransform="matrix(1 0 0 -1 0 472)">
+	<stop  offset="0" style="stop-color:#E632D4"/>
+	<stop  offset="1" style="stop-color:#1C30E6;stop-opacity:0.2"/>
+</linearGradient>
+<circle class="st2" cx="176" cy="199" r="109"/>
+<radialGradient id="SVGID_3_" cx="-506.1861" cy="777.5368" r="1" gradientTransform="matrix(2.287028e-14 373.5 373.5 -2.287028e-14 -289819.5 189120)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#A8FFEA"/>
+	<stop  offset="1" style="stop-color:#03FFC3"/>
+</radialGradient>
+<circle class="st3" cx="590.5" cy="59.5" r="373.5"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="523.4019" y1="276.1458" x2="364.4019" y2="-22.8542" gradientTransform="matrix(1 0 0 -1 0 472)">
+	<stop  offset="0" style="stop-color:#427D8A"/>
+	<stop  offset="0.4805" style="stop-color:#59428A"/>
+	<stop  offset="0.6771" style="stop-color:#564B8A"/>
+	<stop  offset="0.9999" style="stop-color:#44788A"/>
+	<stop  offset="1" style="stop-color:#427D8A;stop-opacity:0"/>
+</linearGradient>
+<circle class="st4" cx="463.5" cy="308.5" r="144.5"/>
+</svg>

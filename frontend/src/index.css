@@ -35,12 +35,13 @@ p, a, b {
 
 /* navbar */
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   box-sizing: border-box;
   top: 0;
   width: 100%;
-  background-color: #4F5D63;
-  padding: 25px;
+  background: linear-gradient(0deg, rgba(250, 0, 255, 0.0493206) 0%, rgba(250, 0, 255, 0.0493206) 18.75%, rgba(0, 255, 178, 0.056) 99.99%, rgba(93, 126, 210, 0.1) 100%), #3C3C3C;
+  /* background-color: #4F5D63; */
+  padding: 20px;
   padding-left: 10px;
   padding-right: 20px;
   overflow-x: hidden;
@@ -50,7 +51,7 @@ p, a, b {
   float: right;
 }
 .navbar a {
-  color: #73CDF3;
+  color: #fff;
   font-size: 25px;
   padding: 20px;
   text-decoration: none;
@@ -139,11 +140,16 @@ p, a, b {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-
+}
 .aboutInfo1 {
-  margin-top: 100px;
-  margin-left: 20px;
-  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+.aboutInfo1 div {
+  flex: 1;
+}
+.aboutInfo1 p {
+  font-size: 3rem;
 }
 
 .aboutInfo2 {

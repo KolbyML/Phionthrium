@@ -1,3 +1,3 @@
-import NavBar from "./NavBar"
+// import NavBar from "./NavBar"
 import "./styles.css"
-export default NavBar;
+// export default NavBar;

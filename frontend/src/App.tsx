@@ -1,14 +1,20 @@
 import React from "react";
-import "./App.css";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
-import NavBar from "./Components/NavBar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { MainPage } from "./pages/Main";
+import { Login } from "./pages/Login";
+import { PageNotFound } from "./pages/PageNotFound";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
-        <Switch></Switch>
+        <Switch>
+            <Route exact path='/' component={MainPage} />
+            <Route path='/login' component={Login} />
+            <Route path='/browse' component={PageNotFound} />
+            <Route path="/404" component={PageNotFound} />
+            <Route component={PageNotFound} />
+        </Switch>
       </Router>
     </div>
   );

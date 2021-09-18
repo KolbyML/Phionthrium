@@ -5,7 +5,7 @@ import "./styles.css"
 export const NavBar = () => {
   return (
     <nav className="navbar">
-      <HashLink to="/#" title="phionthrium">phion<u>thrium</u></HashLink>
+      <HashLink to="/#" title="phionthrium"><img width="26px" className="navIcon" src={"logo.svg"} alt="logo" /> phion<u>thrium</u></HashLink>
       <div className="navItems">
           <HashLink title="Home" to="/#" >Home</HashLink>
           <HashLink title="About" to="/#about" >About</HashLink>

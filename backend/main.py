@@ -1,6 +1,6 @@
 # for windows phionthrium\Scripts\activate
-import json
 from flask import Flask, request, Response
+import json
 
 app = Flask(__name__)
 
@@ -21,7 +21,12 @@ def browse():
         "name": "phionthrium",
         "description": "this.self",
         "img": None,
-    }, ]
+    }, {
+        "name": "bottom penguin coin",
+        "description": "A new crypto currency for us penguins 🐧 because why not 🥺👉👈. Read the white papers here: https://github.com/Zeyu-Li/bottom-penguin/blob/main/white-paper.pdf ",
+        "img": None,
+    },
+     ]
     return Response(json.dumps(content),  mimetype='application/json')
 
 @app.errorhandler(500)

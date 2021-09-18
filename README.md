@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+![banner](banner.png)
+
 A blockchain quantum IoT project that is in progress
 
 

@@ -9,7 +9,7 @@ export const NavBar = () => {
         <div className="navItems">
             <HashLink title="Home" to="/#" >Home</HashLink>
             <HashLink title="About" to="/#about" >About</HashLink>
-            <HashLink title="Login" to="/Login" >Contact</HashLink>
+            <HashLink title="Login" to="/Login" >Login</HashLink>
         </div>
     </nav>
   );

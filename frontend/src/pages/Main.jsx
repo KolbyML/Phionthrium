@@ -1,5 +1,6 @@
 import React, {useEffect, } from 'react'
 import { NavBar } from '../Components/NavBar/NavBar'
+import { About } from './About'
 // import NavBar from '../Components/index'
 
 export const MainPage = () => {
@@ -11,7 +12,7 @@ export const MainPage = () => {
     return (
         <>
             <NavBar/>
-            hi
+            <About/>
         </>
     )
 }

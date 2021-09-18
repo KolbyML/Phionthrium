@@ -51,3 +51,25 @@ code {
 .navbar a:hover {
   color: #eaeff1;
 }
+
+.aboutInfo1 {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 4rem;
+}
+
+.aboutInfo2 {
+  align-items: center;
+  background-image: linear-gradient(#E532D4, #1C30E5);
+  color: #eaeff1;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  height: 800px;
+  justify-content: space-evenly;
+
+}
+
+.imgTextContainer {
+  width: 512px;
+}

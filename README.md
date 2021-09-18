@@ -6,6 +6,24 @@ A blockchain quantum IoT project that is in progress
 
 
 
+## Backend
+
+Flask
+
+using venv `phionthrium\Scripts\activate`
+
+### Dependencies
+
+* Flask
+
+
+
+## Front end
+
+[Figma link](https://www.figma.com/file/AvHAIEKiN7gMtnP1KvzkJO/Crypto-Bros?node-id=0%3A1) 
+
+
+
 ## Team 👨‍👨‍👦‍👦
 
 * [Kolby ML](https://github.com/KolbyML)

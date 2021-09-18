@@ -8,6 +8,14 @@ A blockchain quantum IoT project that is in progress
 
 ## Backend
 
+Flask
+
+using venv `phionthrium\Scripts\activate`
+
+### Dependencies
+
+* Flask
+
 
 
 ## Front end

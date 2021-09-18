@@ -16,8 +16,8 @@ export const Login = () => {
 
     return (
         <div className="login">
-            <a href="/" className="transition">
-                <div style={{display: 'flex', alignItems: "center"}}><img src={"arrow.svg"} /></div>
+            <a href="/" className="transition" title="go back">
+                <div style={{display: 'flex', alignItems: "center"}}><img src={"arrow.svg"} alt="back button" /></div>
                 <div style={{display: 'flex', alignItems: "center"}}><p>Back</p></div>
             </a>
             <h1>Login</h1>

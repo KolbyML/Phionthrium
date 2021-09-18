@@ -154,7 +154,7 @@ p, a, b {
 
 .aboutInfo2 {
   align-items: center;
-  background-image: linear-gradient(#E532D4, #1C30E5);
+  background: linear-gradient(180deg, rgba(230, 50, 212, 0.6) 0%, rgba(28, 48, 230, 0.12) 100%), #4296FA;
   color: #eaeff1;
   display: flex;
   flex-direction: row;

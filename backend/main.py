@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/api/")
 def main():
+    # user is window.ethereum public key
     user = request.args.get('user')
     return {"message": f"hello {user}"}
 

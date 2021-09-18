@@ -224,4 +224,29 @@ p, a, b {
 
 .aboutInfo3 {
   margin-left: 250px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+/* cards */
+.browseGrid {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.card {
+  background: linear-gradient(149.64deg, rgba(230, 50, 212, 0.6) 35.93%, rgba(28, 48, 230, 0.12) 157.41%), #4296FA;
+  border-radius: 20px 0px 20px 0px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+}
+.card > div {
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.card p, .card h2 {
+  color: white;
 }

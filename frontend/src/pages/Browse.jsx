@@ -22,8 +22,15 @@ export const Browse = () => {
 
     const getContent = () => {
         return browseData.map(item=> {
+            console.log(item.img)
             return (
-                <div><p>{item.name}</p></div>
+                <div className="card">
+                    <div>
+                        <img alt={item.name+"image"} src={item.img === null ? 'placeholder.svg' : item.img} />
+                    <h2>{item.name}</h2>
+                    <p>{item.description}</p>
+                    </div>
+                </div>
             )
         })
     }
@@ -32,7 +39,7 @@ export const Browse = () => {
         <>
             <NavBar/>
             {/* grid */}
-            <div>
+            <div className={!serverError ? "browseGrid" : null}>
                 {serverError ? <h1 style={{color: "red", textAlign: "center"}}>Unfortunately the server is down, please try again at a different time</h1> : getContent()}
             </div>
         </>

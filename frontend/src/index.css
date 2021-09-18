@@ -83,8 +83,8 @@ p, a, b {
   text-align: center;
 }
 .breakLine {
-  margin: 40px;
-  margin-top: 60px;
+  margin: 20px;
+  margin-top: 50px;
   width: 70%;
   margin-left: 15%;
   border-top: 2px solid #161616;
@@ -98,8 +98,10 @@ p, a, b {
   color: white;
   border-radius: 200px;
   cursor: pointer;
-  margin-bottom: 60px;
   /* filter: drop-shadow(8px 8px 4px rgba(17, 17, 17, 0.349)); */
+}
+.loginButton:hover {
+  background-color: #1482db;
 }
 /* glassy style */
 .glassy {
@@ -114,9 +116,11 @@ p, a, b {
     rgba(255, 255, 255, 0.4)
   );
   min-height: 200px;
+  /* padding-bottom: 15px; */
+  padding-bottom: 60px;
 }
 .glassy div {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .glassy input {
   padding: .375rem .75rem;

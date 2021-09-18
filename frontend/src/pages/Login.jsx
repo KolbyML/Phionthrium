@@ -22,11 +22,11 @@ export const Login = () => {
             </a>
             <h1>Login</h1>
             <div className="glassy">
-                <div style={{padding: "20px", paddingBottom: "0px"}}><p><b>Ethereum Public Wallet Key:</b></p></div>
+                <div style={{color: "#161616"}}><p><b>Ethereum Public Wallet Key:</b></p></div>
                 <input value={inputKey} onChange={e=>setInputKey(e.target.value)} placeholder="Public Wallet Key Here" />
                 <div className="breakLine"></div>
-                <button className="loginButton" title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
-                {ethereum && ethKey ? <p>Detected Key: {ethKey}</p> : null}
+                <button className="transition loginButton " title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
+                {ethereum && ethKey ? <p style={{color: "#161616"}}>Detected Key: {ethKey}</p> : null}
             </div>
         </div>
     )

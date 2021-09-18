@@ -1,8 +1,8 @@
 # Phionthrium
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 ![banner](banner.png)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A blockchain quantum IoT project that is in progress
 
@@ -40,4 +40,10 @@ A React frontend
 * [Ben Wang](https://github.com/Xiaoyu-Ben-Wang)
 * [Andrew Li](https://github.com/Zeyu-Li)
 * [Dan](https://github.com/seliayeu)
+
+
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 

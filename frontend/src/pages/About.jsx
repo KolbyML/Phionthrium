@@ -31,8 +31,8 @@ export const About = () => {
           <img src={'landingIcon.svg'} alt="abstract art" style={{width: "50vw"}} />
         </div>
       </div>
-      <div className="aboutInfo2">
-        <div className="imgTextContainer">
+      <div className="aboutInfo2" id="about">
+        {/* <div className="imgTextContainer">
           <img src="page512.png" alt="page" width="512px"/>
           <p id="pageText">
             Sugma:
@@ -40,12 +40,18 @@ export const About = () => {
             The new all in one program
             <br /> to do all the things that suck
           </p>
+        </div> */}
+        <div style={{display: "flex" ,justifyContent: "center", alignItems: "center"}}>
+          <img src="page512.png" alt="page" width="512px"/>
         </div>
-        <p>
-          Bring your ideas to life with a proposal.
-          <br />
-          Submit it to the blockchain 🔗
-        </p>
+        <div>
+          <h2>
+            Bring your ideas to <br/>life with a proposal.
+          </h2>
+          <h3 style={{fontWeight: "normal"}}>
+            Submit it to the <br/>blockchain 🔗
+          </h3>
+        </div>
       </div>
     </div>
   );

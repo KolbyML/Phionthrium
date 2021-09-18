@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 export const About = () => {
   const ideas = [
@@ -66,9 +67,11 @@ export const About = () => {
         <p className="aboutTextBig">
           Support creators and browse the projects below
         </p>
+        <HashLink title="browse" to="/browse">
         <button type="button" className="browseButton">
           Browse Projects
         </button>
+        </HashLink>
       </div>
     </div>
   );

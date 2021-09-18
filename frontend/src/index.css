@@ -15,7 +15,7 @@ code {
 h1 {
   font-size: 48px;
 }
-p, a {
+p, a, b {
   font-size: 16px;
 }
 
@@ -82,11 +82,30 @@ p, a {
   font-weight: normal;
   text-align: center;
 }
+.breakLine {
+  margin: 40px;
+  margin-top: 60px;
+  width: 70%;
+  margin-left: 15%;
+  border-top: 2px solid #161616;
+}
+.loginButton {
+  background-color: #309df4;
+  border: none;
+  padding: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  border-radius: 200px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  /* filter: drop-shadow(8px 8px 4px rgba(17, 17, 17, 0.349)); */
+}
 /* glassy style */
 .glassy {
   text-align: center;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 400px;
   border-radius: 30px;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -98,4 +117,22 @@ p, a {
 }
 .glassy div {
   padding-top: 20px;
+}
+.glassy input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.glassy input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }

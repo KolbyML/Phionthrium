@@ -1,10 +1,18 @@
-import React, {useEffect, } from 'react'
+import React, {useEffect, useState } from 'react'
 
 
 export const Login = () => {
+    const [ethKey, setEthKey] = useState("")
+    const [inputKey, setInputKey] = useState("")
+    const ethereum = window.ethereum
     useEffect(()=>{
         document.title = "Phionthrium | Login"
+        // console.log(window.ethereum)
     },[])
+
+    ethereum.on('accountChanged', (accounts)=>{
+        setEthKey(accounts[0])
+    })
 
     return (
         <div className="login">
@@ -14,10 +22,11 @@ export const Login = () => {
             </a>
             <h1>Login</h1>
             <div className="glassy">
-                <div><p><b>Ethereum Public Wallet Key:</b></p></div>
-                <input />
-                <div></div>
-                <button></button>
+                <div style={{padding: "20px", paddingBottom: "0px"}}><p><b>Ethereum Public Wallet Key:</b></p></div>
+                <input value={inputKey} onChange={e=>setInputKey(e.target.value)} placeholder="Public Wallet Key Here" />
+                <div className="breakLine"></div>
+                <button className="loginButton" title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
+                {ethereum && ethKey ? <p>Detected Key: {ethKey}</p> : null}
             </div>
         </div>
     )

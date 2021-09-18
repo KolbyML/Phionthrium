@@ -8,7 +8,7 @@ A blockchain quantum IoT project that is in progress
 
 ## Backend
 
-Flask
+Python Flask
 
 using venv `phionthrium\Scripts\activate`
 
@@ -20,7 +20,15 @@ using venv `phionthrium\Scripts\activate`
 
 ## Front end
 
+A React frontend
+
 [Figma link](https://www.figma.com/file/AvHAIEKiN7gMtnP1KvzkJO/Crypto-Bros?node-id=0%3A1) 
+
+
+
+### Dependencies
+
+* React
 
 
 

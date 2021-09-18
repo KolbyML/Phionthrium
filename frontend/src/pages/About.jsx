@@ -22,9 +22,14 @@ export const About = () => {
   return (
     <div>
       <div className="aboutInfo1">
-        <p>
-          Crowdfund your <br /> <strong>{ideas[index]}</strong> ideas
-        </p>
+        <div style={{display: "flex" ,justifyContent: "center", alignItems: "center"}}>
+          <p>
+            Crowdfund your <br /> <strong>{ideas[index]}</strong> ideas
+          </p>
+        </div>
+        <div>
+          <img src={'landingIcon.svg'} alt="abstract art" style={{width: "50vw"}} />
+        </div>
       </div>
       <div className="aboutInfo2">
         <div className="imgTextContainer">

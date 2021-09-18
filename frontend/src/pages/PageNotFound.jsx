@@ -1,15 +1,14 @@
 import React, {useEffect, } from 'react'
 
 
-export const MainPage: React.FC = () => {
-
+export const PageNotFound = () => {
     useEffect(()=>{
-        document.title = "Phionthrium | Home"
+        document.title = "Phionthrium | 404"
     },[])
 
     return (
         <>
-        hi
+        404
         </>
     )
 }

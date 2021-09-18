@@ -42,3 +42,12 @@ code {
 .navItems {
   float: right;
 }
+.navbar a {
+  color: #73CDF3;
+  font-size: 25px;
+  padding: 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #eaeff1;
+}

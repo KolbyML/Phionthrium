@@ -1,14 +1,14 @@
 import React, {useEffect, } from 'react'
 
 
-export const PageNotFound: React.FC = () => {
+export const Login = () => {
     useEffect(()=>{
-        document.title = "Phionthrium | 404"
+        document.title = "Phionthrium | Login"
     },[])
 
     return (
         <>
-        404
+        Login
         </>
     )
 }

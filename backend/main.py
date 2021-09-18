@@ -13,7 +13,8 @@ def main():
 @app.route("/api/browse/")
 def browse():
     # dumby info
-    content = [{
+    content = [
+    {
         "name": "LLVM",
         "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Despite its name, LLVM has little to do with traditional virtual machines. The name \"LLVM\" itself is not an acronym; it is the full name of the project.",
         "img": None,
@@ -26,7 +27,7 @@ def browse():
         "description": "A new crypto currency for us penguins 🐧 because why not 🥺👉👈. Read the white papers here: https://github.com/Zeyu-Li/bottom-penguin/blob/main/white-paper.pdf ",
         "img": None,
     },
-     ]
+    ]
     return Response(json.dumps(content),  mimetype='application/json')
 
 @app.errorhandler(500)

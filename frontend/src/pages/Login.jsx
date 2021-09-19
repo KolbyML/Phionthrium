@@ -15,9 +15,9 @@ export const Login = () => {
 
     return (
         <div className="login">
-            <div style={{display: "flex", flexDirection: "row", padding:"30px"}} onClick={() => {console.log("gamer"); history.push("/"); }} className="transition" title="go back">
-                <div style={{display: 'flex', alignItems: "center"}}><img src={"arrow.svg"} alt="back button" /></div>
-                <div style={{display: 'flex', alignItems: "center", color: "white",}}><h2 style={{fontWeight: "400"}}>Back</h2></div>
+            <div style={{display: "flex", flexDirection: "row", padding:"30px"}} className="transition" title="go back">
+                <div className = "backButton" onClick={() => {history.push("/"); }}  style={{display: 'flex', alignItems: "center"}}><img src={"arrow.svg"} alt="back button" /></div>
+                <div className = "backButton" onClick={() => {history.push("/"); }}  style={{display: 'flex', alignItems: "center", color: "white",}}><h2 style={{fontWeight: "400"}}>Back</h2></div>
             </div>
             <h1>Login</h1>
             <div className="glassy">

@@ -45,7 +45,7 @@ def getEntry():
     try:
         entry = int(getNum)
         if not (0<entry<len(content)):
-            raise Exception(("not valid entry"))
+            raise Exception("not valid entry")
         
     except:
         return {"error": f"entry not found"}
@@ -54,8 +54,8 @@ def getEntry():
 
 @app.route("/api/entry/add/", methods = ['POST', 'GET'])
 def addEntry():
-    json_item = request.get_json(force=True) 
     try: 
+        json_item = request.get_json() 
         print(request.json)
         user = json_item["user"]
         name = json_item["name"]

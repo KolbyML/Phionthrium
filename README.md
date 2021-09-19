@@ -1,14 +1,48 @@
-# Basic Sample Hardhat Project
+# Phionthrium
 
 ![banner](banner.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Try running some of the following tasks:
+A blockchain quantum IoT project that is in progress
+
+
+
+## Backend
+
+Python Flask
+
+using venv `phionthrium\Scripts\activate`
+
+### Dependencies
+
+* Flask
+
+
+
+## Front end
+
+A React frontend
+
+[Figma link](https://www.figma.com/file/AvHAIEKiN7gMtnP1KvzkJO/Crypto-Bros?node-id=0%3A1) 
+
+
+
+### Dependencies
+
+* React
+
+
+
+## Team 👨‍👨‍👦‍👦
+
+* [Kolby ML](https://github.com/KolbyML)
+* [Ben Wang](https://github.com/Xiaoyu-Ben-Wang)
+* [Andrew Li](https://github.com/Zeyu-Li)
+* [Dan](https://github.com/seliayeu)
 
 
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-

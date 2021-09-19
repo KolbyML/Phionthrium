@@ -1,0 +1,37 @@
+Get http://localhost:5000/api
+
+### Get all
+
+GET http://localhost:5000/api/browse/
+
+### Get a product
+
+GET http://localhost:5000/api/entry/?entry=523455
+
+### Get a product
+
+GET http://localhost:5000/api/entry/?entry=1
+
+### Adding a product
+
+POST http://localhost:5000/api/entry/add/ 
+Content-Type: application/json
+
+{
+    "user": "2345",
+    "name": "Joe",
+    "description": "Joe mama",
+}
+
+### get
+GET http://localhost:5000/api/entry/add/
+
+### Remove a product
+
+DELETE http://localhost:5000/api/entry/remove/ 
+Content-Type: application/json
+
+{
+    "uid": "4",
+    "keys": "TESTING.7#%",
+}

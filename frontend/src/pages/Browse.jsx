@@ -24,7 +24,7 @@ export const Browse = () => {
         return browseData.map(item=> {
             console.log(item.img)
             return (
-                <div className="card">
+                <div className="card" key={item.uid}>
                     <div>
                         <img alt={item.name+"image"} src={item.img === null ? 'placeholder.svg' : item.img} />
                     <h2>{item.name}</h2>

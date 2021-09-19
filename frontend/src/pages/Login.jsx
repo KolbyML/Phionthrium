@@ -3,7 +3,6 @@ import { PublicKeyContext } from '../App'
 import { useHistory } from 'react-router'
 
 export const Login = () => {
-    const [ethKey, setEthKey] = useState("")
     const { publicKey, setPublicKey } = useContext(PublicKeyContext)
     const [inputKey, setInputKey] = useState("")
     const history = useHistory();
@@ -13,9 +12,6 @@ export const Login = () => {
         // console.log(window.ethereum)
     },[])
 
-    ethereum.on('accountChanged', (accounts)=>{
-        setEthKey(accounts[0])
-    })
 
     return (
         <div className="login">
@@ -29,7 +25,7 @@ export const Login = () => {
                 <input value={inputKey} onChange={e=>setInputKey(e.target.value)} placeholder="Public Wallet Key Here" />
                 <div className="breakLine"></div>
                 <button className="transition loginButton " onClick={() => {setPublicKey(inputKey); setInputKey(""); console.log(publicKey); }} title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
-                {ethereum && ethKey ? <p style={{color: "#161616"}}>Detected Key: {ethKey}</p> : null}
+                {ethereum && publicKey ? <p style={{color: "#161616"}}>Detected Key: {publicKey}</p> : null}
             </div>
         </div>
     )

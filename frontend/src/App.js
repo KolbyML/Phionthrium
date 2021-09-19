@@ -3,8 +3,7 @@ import { MainPage } from "./pages/Main";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { PageNotFound } from "./pages/PageNotFound";
-import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { Browse } from "./pages/Browse";
 
 export const PublicKeyContext = createContext({ publicKey: undefined, setPublicKey: (key) => {}});

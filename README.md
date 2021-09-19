@@ -1,11 +1,10 @@
-# Basic Sample Hardhat Project
+# Phionthrium
 
 [![banner](banner.png)](https://phionthrium.vercel.app/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-Try running some of the following tasks:
+A blockchain quantum IoT project that is in progress
 
 ```shell
 npx hardhat accounts

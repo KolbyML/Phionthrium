@@ -83,7 +83,7 @@ def removeEntry():
         keys = json_item['keys']
 
         uid = int(uid)
-        if uid and keys and 0 < uid < len(content) and keys == MASTER_KEY:
+        if uid and keys and 0 < uid <= len(content) and keys == MASTER_KEY:
             del content[uid-1]
             return {"message": "entry was deleted"}
 

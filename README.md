@@ -16,6 +16,18 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 
+## Screenshots
+
+![screen1](screen1.png)
+
+![screen3](screen3.png)
+
+![screen4](screen4.png)
+
+![screen2](screen2.png)
+
+
+
 ## Smart Contract/Blockchain
 
 Using [Solana](https://docs.solana.com/) 

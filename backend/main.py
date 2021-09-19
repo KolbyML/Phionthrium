@@ -18,7 +18,7 @@ content = [
 }, {
     "uid": "2",
     "name": "phionthrium",
-    "description": "this.self",
+    "description": "Phionthrium allows you to fund your favorite open source projects through a series of unimplemented Ethereum smart contracts. As a creator, after signing up you can redeem your funds monthly as curious consumers pledge their hard-earned Ethereum, the Robux of the future.",
     "img": None,
 }, {
     "uid": "3",
@@ -56,7 +56,6 @@ def getEntry():
 def addEntry():
     try: 
         json_item = request.get_json() 
-        print(request.json)
         user = json_item["user"]
         name = json_item["name"]
         description = json_item["description"]
@@ -80,8 +79,8 @@ def addEntry():
 def removeEntry():
     try:
         json_item = request.get_json() 
-        uid = request.args.get('uid')
-        keys = request.args.get('keys')
+        uid = json_item['uid']
+        keys = json_item['keys']
 
         uid = int(uid)
         if uid and keys and 0 < uid < len(content) and keys == MASTER_KEY:

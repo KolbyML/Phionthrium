@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-A blockchain quantum IoT project that is in progress
+Phionthrium allows you to fund your favorite open source projects through a series of unimplemented Ethereum smart contracts. As a creator, after signing up you can redeem your funds monthly as curious consumers pledge their hard-earned Ethereum, the Robux of the future.
 
 ```shell
 npx hardhat accounts

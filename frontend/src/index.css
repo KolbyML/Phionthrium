@@ -133,7 +133,7 @@ p, a, b {
 .glassy div {
   padding-top: 50px;
 }
-.glassy input {
+.glassy input, input, textarea {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -144,7 +144,7 @@ p, a, b {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.glassy input:focus {
+.glassy input:focus, input:focus, textarea:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;

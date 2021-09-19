@@ -64,6 +64,7 @@ const AddProject = () => {
         <p className="newTextBig">Project Name</p>
         <input
           id = "inputTitleText"
+          placeholder="Project Name"
           type="text"
           name="name"
           style={{
@@ -72,15 +73,17 @@ const AddProject = () => {
           }}
         />
         <p className="newTextBig">Description</p>
-        <input
+        <textarea
           id = "inputDescriptionText"
+          placeholder="Project description"
           type="text"
           name="description"
+          rows="5" 
           style={{
-            height: "50%",
+            height: "40%",
             width: "80%",
           }}
-        ></input>
+        ></textarea>
         <HashLink title="browse" to="/browse" className="submitHashLink">
           <button type="button" className="submitButton" onClick={submit}>
             Submit

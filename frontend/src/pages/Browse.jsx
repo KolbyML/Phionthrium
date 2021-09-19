@@ -1,10 +1,14 @@
 import React, {useEffect, useState } from 'react'
+import { useHistory } from 'react-router'
+import { HashLink } from 'react-router-hash-link'
 import { NavBar } from '../Components/NavBar/NavBar'
 // import NavBar from '../Components/index'
 
 export const Browse = () => {
+    const [clickedIndex, setClickedIndex] = useState(-1)
     const [serverError, setServerError] = useState(false)
     const [browseData, setBrowseData] = useState([])
+    const history = useHistory()
 
     useEffect(()=>{
         document.title = "Phionthrium | Browse"
@@ -35,17 +39,26 @@ export const Browse = () => {
             })
     },[])
 
+    const cardClicked = (index) => {
+        let path = `/profile/${index}`
+        history.push(path)
+    }
+
     const getContent = () => {
-        return browseData.map(item=> {
-            console.log(item.img)
+        return browseData.map((item,index)=> {
+            // console.log(item.img)
             return (
-                <div className="card" key={item.uid}>
+                
+                <div className="card" key={"card"+item.uid} title={item.name} onClick={()=>{
+                    cardClicked(index+1)
+                }}>
                     <div>
                         <img alt={item.name+"image"} src={item.img === null ? 'placeholder.svg' : item.img} />
-                    <h2>{item.name}</h2>
+                        <h2>{item.name}</h2>
                     <p>{item.description}</p>
                     </div>
                 </div>
+                
             )
         })
     }

@@ -5,7 +5,7 @@ import { NavBar } from '../Components/NavBar/NavBar'
 export const Profile = () => {
     const { id } = useParams() 
     return (
-        <div>
+        <>
             <NavBar />
             <div>
                 <div className="hoverBlock"></div>
@@ -26,6 +26,6 @@ export const Profile = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

@@ -1,8 +1,10 @@
-import React, {useEffect, useState } from 'react'
+import React, {useContext, useEffect, useState } from 'react'
+import { PublicKeyContext } from '../App'
 
 
 export const Login = () => {
     const [ethKey, setEthKey] = useState("")
+    const { publicKey, setPublicKey } = useContext(PublicKeyContext)
     const [inputKey, setInputKey] = useState("")
     const ethereum = window.ethereum
     useEffect(()=>{
@@ -25,7 +27,7 @@ export const Login = () => {
                 <div style={{color: "#161616"}}><p><b>Ethereum Public Wallet Key:</b></p></div>
                 <input value={inputKey} onChange={e=>setInputKey(e.target.value)} placeholder="Public Wallet Key Here" />
                 <div className="breakLine"></div>
-                <button className="transition loginButton " title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
+                <button className="transition loginButton " onClick={() => {setPublicKey(inputKey); setInputKey(""); }} title="Use MetaMask to get Wallet Key"><b>Use MetaMask</b></button>
                 {ethereum && ethKey ? <p style={{color: "#161616"}}>Detected Key: {ethKey}</p> : null}
             </div>
         </div>

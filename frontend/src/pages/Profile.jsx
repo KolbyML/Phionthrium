@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import { NavBar } from '../Components/NavBar/NavBar'
 
 export const Profile = () => {
-    const { id } = useParams() 
+    const { id } = useParams()
     return (
         <div>
             <NavBar />

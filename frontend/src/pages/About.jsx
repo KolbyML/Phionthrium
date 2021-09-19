@@ -52,7 +52,7 @@ export const About = () => {
           </p>
         </div> */}
         <div style={{display: "flex" ,justifyContent: "center", alignItems: "center"}}>
-          <img src="page512.png" alt="page" width="512px"/>
+          <img src={"paperPic.svg"} alt="page" className="paperPic"/>
         </div>
         <div>
           <h2>

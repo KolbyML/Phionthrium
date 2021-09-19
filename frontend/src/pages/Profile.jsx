@@ -4,11 +4,23 @@ import { NavBar } from '../Components/NavBar/NavBar'
 
 export const Profile = () => {
     const { id } = useParams() 
+    const [entryData, setEntryData] = useState({})
+
+    useEffect(()=> {
+        fetch(`https://aesthetic-nova-304123.uw.r.appspot.com/api/entry/?entry=${id}`)
+            .then(res=>res.json()).catch(err=>{
+                // console.log(err)
+            })
+            .then(data=>{
+                // console.log(data)
+                setEntryData(data)
+            })
+    },[])
+
     return (
         <>
             <NavBar />
             <div>
-                <div className="hoverBlock"></div>
                 <div className="profile">
                     <div className="profileMiscContainer">
                         <div className="profileImageContainer">
@@ -18,13 +30,14 @@ export const Profile = () => {
                     </div>
                     <div className="profileInfoContainer">
                         <div className="profileTextContainer">
-                            <h1 className="profileHeader">{id}</h1>
+                            <h1 className="profileHeader">{entryData.name}</h1>
                             <p className="profileDescription">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus ligula, consequat ac molestie eleifend, suscipit vitae justo. Pellentesque vitae massa molestie, luctus nisl nec, imperdiet urna. Nam ullamcorper posuere nunc, quis commodo velit efficitur eu. Duis hendrerit felis ante, eu fermentum lacus scelerisque ut. Duis sed lacus at tellus blandit varius. In accumsan ipsum urna, et mollis arcu faucibus sed. Phasellus malesuada, lorem sit amet eleifend dictum, eros mi sollicitudin elit, eget tincidunt ex eros in neque. Aliquam suscipit fringilla erat, ut laoreet tellus convallis at.
+                                {entryData.description}
                             </p>
                         </div>
                     </div>
                 </div>
+                <div className="hoverBlock"></div>
             </div>
         </>
     )

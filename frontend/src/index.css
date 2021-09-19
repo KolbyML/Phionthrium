@@ -171,10 +171,21 @@ p, a, b {
 .hoverBlock {
   display: flex;
   height: 100vh;
-  background-color: #ced4da;
+  
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.4)
+  );
   width: 10vw;
   box-shadow: 0px 0px 5px  #495057;
-  margin-left: auto;
+  /* margin-left: auto; */
+  float: right;
+  /* z-index: 10; */
+}
+.profile div {
+  /* z-index: 10; */
 }
 
 .profile {
@@ -209,14 +220,13 @@ p, a, b {
 }
 
 .profileHeader {
-width: 213px;
-height: 126px;
+width: 20vw;
 left: 572px;
 top: 417px;
 color: #361352;
-font-size: 64px;
-line-height: 80px;
+font-size: 32px;
 margin: 0;
+padding-top: 20px;
 
 }
 
@@ -329,4 +339,7 @@ border-radius: 200px;
 }
 .card p, .card h2 {
   color: white;
+}
+.paperPic {
+  width: 20vw;
 }

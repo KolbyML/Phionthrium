@@ -30,6 +30,8 @@ p, a, b {
   -webkit-transition: .2s;
   -o-transition: .2s;
 }
+
+
 .longerTransition {
   transition: .5s;
   -moz-transition: .5s;
@@ -54,6 +56,12 @@ p, a, b {
 .navItems {
   float: right;
 }
+.navbar p {
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+  text-decoration: none;
+}
 .navbar a {
   color: #fff;
   font-size: 25px;
@@ -69,15 +77,13 @@ p, a, b {
   width: 100vw;
   background: linear-gradient(180deg, rgba(230, 50, 212, 0.6) 0%, rgba(28, 48, 230, 0.12) 100%), #4296FA;
 }
-.login > a {
+.login > p {
   padding-top: 5vh;
   padding-left: 5vw;
   display: flex;
   flex-direction: row;
   color: #fff;
   text-decoration: none;
-}
-.login > a p {
   font-size: 44px;
   margin: 0;
   padding-left: 20px;
@@ -127,7 +133,7 @@ p, a, b {
 .glassy div {
   padding-top: 50px;
 }
-.glassy input {
+.glassy input, input, textarea {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -138,7 +144,7 @@ p, a, b {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.glassy input:focus {
+.glassy input:focus, input:focus, textarea:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
@@ -337,9 +343,76 @@ border-radius: 200px;
   padding-left: 60px;
   padding-right: 60px;
 }
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
 .card p, .card h2 {
   color: white;
 }
 .paperPic {
   width: 20vw;
+}
+
+.background {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, rgba(230, 50, 212, 0.6) 0%, rgba(28, 48, 230, 0.12) 100%), #4296FA;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.addProjectContainer {
+  flex-direction: column;
+  height: 80vh;
+  width: 40vw;
+  margin: auto;
+  border: white solid;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.newTextBig {
+  color: white;
+  font-size: 2rem;
+  margin: 25px;
+}
+
+.submitButton {
+  font-size: 3rem;
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 0px;
+  padding: 0;
+  margin: auto;
+  transition-duration: 25ms;
+}
+
+
+.submitButton:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  background-color: #eaeff1;
+  border: 5px solid rgba(230, 50, 212, 0.6);
+  color: rgba(230, 50, 212, 0.6);
+}
+
+.submitHashLink {
+  font-size: 3rem;
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  border: 0px;
+  padding: 0;
+  margin: auto;
+  transition-duration: 25ms;
+
 }

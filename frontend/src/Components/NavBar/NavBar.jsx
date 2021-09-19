@@ -12,10 +12,11 @@ export const NavBar = () => {
       <div className="navItems">
           <HashLink title="Home" to="/#" >Home</HashLink>
           <HashLink title="About" to="/#about" >About</HashLink>
+          <HashLink title="New Project" to="/new">New Project</HashLink>
           {
-            publicKey ? <h1>{publicKey}</h1> : 
+            publicKey ? <></> :
             <HashLink title="Login" to="/Login" >Login</HashLink>
-          }
+        }
       </div>
     </nav>
   );

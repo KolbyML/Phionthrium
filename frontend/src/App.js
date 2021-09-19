@@ -3,13 +3,13 @@ import { MainPage } from "./pages/Main";
 import { Login } from "./pages/Login";
 import { Profile } from "./pages/Profile";
 import { PageNotFound } from "./pages/PageNotFound";
-import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { Browse } from "./pages/Browse";
+import AddProject from "./pages/AddProject";
 
 export const PublicKeyContext = createContext({ publicKey: undefined, setPublicKey: (key) => {}});
 
-const App = () => {    
+const App = () => {
   const [publicKey, setPublicKey] = useState(undefined)
 
   return (
@@ -22,6 +22,7 @@ const App = () => {
               <Route path='/browse' component={Browse} />
               <Route path='/profile/:id' component={Profile} />
               <Route path="/404" component={PageNotFound} />
+              <Route path="/new" component={AddProject} />
               <Route component={PageNotFound} />
           </Switch>
         </Router>

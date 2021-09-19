@@ -1,41 +1,15 @@
-# Phionthrium
+# Basic Sample Hardhat Project
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-A blockchain quantum IoT project that is in progress
+Try running some of the following tasks:
 
-
-
-## Backend
-
-Python Flask
-
-using venv `phionthrium\Scripts\activate`
-
-### Dependencies
-
-* Flask
-
-
-
-## Front end
-
-A React frontend
-
-[Figma link](https://www.figma.com/file/AvHAIEKiN7gMtnP1KvzkJO/Crypto-Bros?node-id=0%3A1) 
-
-
-
-### Dependencies
-
-* React
-
-
-
-## Team 👨‍👨‍👦‍👦
-
-* [Kolby ML](https://github.com/KolbyML)
-* [Ben Wang](https://github.com/Xiaoyu-Ben-Wang)
-* [Andrew Li](https://github.com/Zeyu-Li)
-* [Dan](https://github.com/seliayeu)
-
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```

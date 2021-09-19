@@ -64,7 +64,7 @@ A React frontend
 
 - [Ben Wang](https://github.com/Xiaoyu-Ben-Wang)
 - [Andrew Li](https://github.com/Zeyu-Li)
-- [Dan](https://github.com/seliayeu)
+- [Dan Seliayeu](https://github.com/seliayeu)
 - [Kolby ML](https://github.com/KolbyML)
 
 ## License

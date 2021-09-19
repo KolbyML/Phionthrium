@@ -229,10 +229,10 @@ p, a, b {
 }
 /* cards */
 .browseGrid {
-  margin-top: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  margin-bottom: 5vh;
 }
 .card {
   background: linear-gradient(149.64deg, rgba(230, 50, 212, 0.6) 35.93%, rgba(28, 48, 230, 0.12) 157.41%), #4296FA;
@@ -241,6 +241,7 @@ p, a, b {
   display: flex;
   flex-direction: column;
   min-height: 40vh;
+  margin-top: 10vh;
 }
 .card > div {
   padding: 30px;

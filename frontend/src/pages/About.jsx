@@ -18,22 +18,31 @@ export const About = () => {
     }, 2500);
     return () => clearInterval(interval);
   });
-
   return (
     <div>
       <div className="aboutInfo1">
-        <div style={{display: "flex" ,justifyContent: "center", alignItems: "center"}}>
-          <p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p className="aboutTextBig">
             Crowdfund your <br /> <strong>{ideas[index]}</strong> ideas
           </p>
         </div>
         <div>
-          <img src={'landingIcon.svg'} alt="abstract art" style={{width: "50vw"}} />
+          <img
+            src={"landingIcon.svg"}
+            alt="abstract art"
+            style={{ width: "50vw" }}
+          />
         </div>
       </div>
       <div className="aboutInfo2">
         <div className="imgTextContainer">
-          <img src="page512.png" alt="page" width="512px"/>
+          <img src="page512.png" alt="page" width="512px" />
           <p id="pageText">
             Sugma:
             <br />
@@ -41,11 +50,19 @@ export const About = () => {
             <br /> to do all the things that suck
           </p>
         </div>
-        <p>
+        <p className="aboutTextBig">
           Bring your ideas to life with a proposal.
           <br />
           Submit it to the blockchain 🔗
         </p>
+      </div>
+      <div className="aboutInfo3">
+        <p className="aboutTextBig">
+          Support creators and browse the projects below
+        </p>
+        <button type="button" className="browseButton">
+          Browse Projects
+        </button>
       </div>
     </div>
   );

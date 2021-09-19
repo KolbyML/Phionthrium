@@ -268,3 +268,34 @@ border-radius: 200px;
 .imgTextContainer {
   width: 512px;
 }
+
+.aboutTextBig {
+  font-size: 3rem;
+}
+
+.browseButton {
+  font-size: 3rem;
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #4296FA;
+  color: #eaeff1;
+  border: 0px;
+  padding: 0;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  transition-duration: 25ms;
+
+}
+.browseButton:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  background-color: #eaeff1;
+  border: 5px solid #4296FA;
+  color: #4296FA;
+}
+
+.aboutInfo3 {
+  margin-left: 250px;
+}

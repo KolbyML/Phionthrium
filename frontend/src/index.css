@@ -171,10 +171,21 @@ p, a, b {
 .hoverBlock {
   display: flex;
   height: 100vh;
-  background-color: #ced4da;
+  
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.4)
+  );
   width: 10vw;
   box-shadow: 0px 0px 5px  #495057;
-  margin-left: auto;
+  /* margin-left: auto; */
+  float: right;
+  /* z-index: 10; */
+}
+.profile div {
+  /* z-index: 10; */
 }
 
 .profile {
@@ -189,6 +200,83 @@ p, a, b {
 
   background: linear-gradient(149.64deg, rgba(230, 50, 212, 0.6) 35.93%, rgba(28, 48, 230, 0.12) 157.41%), #4296FA;
   border-radius: 0px 0px 0px 130px;
+}
+.profileTextContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+}
+
+.profileInfoContainer {
+  width: 70%;
+  height: 70%;
+  left: 221px;
+  top: 265px;
+  margin-left: 100px;
+  margin-top: 120px;
+  box-shadow: 0px 0px 5px  #495057;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 3px 70px 41px 66px;
+}
+
+.profileHeader {
+width: 20vw;
+left: 572px;
+top: 417px;
+color: #361352;
+font-size: 32px;
+margin: 0;
+padding-top: 20px;
+
+}
+
+.profileDescription {
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+.profileImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.profileImageContainer {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0px 50px 25px 50px;
+  object-fit: cover;
+  box-shadow: 0px 0px 2px  #495057;
+
+background: #C4C4C4;
+}
+
+.profileMiscContainer {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 175px;
+  top: 50px;
+}
+
+.supportButton {
+width: 250px;
+height: 60px;
+margin-top: 50px;
+justify-content: center;
+background: linear-gradient(180deg, rgba(230, 50, 212, 0.8) 0%, rgba(28, 48, 230, 0.16) 100%), #1F64B4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 200px;
+}
+
+.buttonText {
+  font-size: 28px;
+  color:rgba(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  margin-top: 8px;
+  font-weight: 400;
 }
 
 .imgTextContainer {
@@ -229,10 +317,10 @@ p, a, b {
 }
 /* cards */
 .browseGrid {
-  margin-top: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  margin-bottom: 5vh;
 }
 .card {
   background: linear-gradient(149.64deg, rgba(230, 50, 212, 0.6) 35.93%, rgba(28, 48, 230, 0.12) 157.41%), #4296FA;
@@ -241,6 +329,8 @@ p, a, b {
   display: flex;
   flex-direction: column;
   min-height: 40vh;
+  margin-top: 10vh;
+  cursor: pointer;
 }
 .card > div {
   padding: 30px;
@@ -249,4 +339,7 @@ p, a, b {
 }
 .card p, .card h2 {
   color: white;
+}
+.paperPic {
+  width: 20vw;
 }

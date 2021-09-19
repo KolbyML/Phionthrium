@@ -44,7 +44,7 @@ def getEntry():
     entry = 0
     try:
         entry = int(getNum)
-        if not (0<entry<len(content)):
+        if not (0<entry<=len(content)):
             raise Exception("not valid entry")
         
     except:

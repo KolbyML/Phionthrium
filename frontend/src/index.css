@@ -337,6 +337,11 @@ border-radius: 200px;
   padding-left: 60px;
   padding-right: 60px;
 }
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
 .card p, .card h2 {
   color: white;
 }

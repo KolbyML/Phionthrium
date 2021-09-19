@@ -24,7 +24,7 @@ export const Profile = () => {
                 <div className="profile">
                     <div className="profileMiscContainer">
                         <div className="profileImageContainer">
-                            <img className="profileImage" src="https://images.unsplash.com/photo-1579353977828-2a4eab540b9a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2FtcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="wow" />
+                            <img className="profileImage" src="https://raw.githubusercontent.com/Zeyu-Li/Phionthrium/main/frontend/public/placeholder.svg" alt={entryData.name} />
                         </div>
                         <div className="supportButton"><h1 className="buttonText">Support</h1></div>
                     </div>
